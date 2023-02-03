@@ -33,12 +33,6 @@
 <style lang="scss" scoped>
 @import "../assets/sass/styles.scss";
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: $font-family;
-}
-
 .box{
     margin-left: 2rem;
     display: flex;
@@ -99,7 +93,7 @@
             border: 4px solid black;
             font-size: 24px;
             padding-inline: 2.5rem;
-            padding-bottom: 0.4rem;
+            padding-block: 0.2rem;
             box-shadow: 2px 2px 2px rgb(77, 77, 77);
         }
     }

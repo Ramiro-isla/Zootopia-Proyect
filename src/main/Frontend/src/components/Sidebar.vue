@@ -22,10 +22,10 @@
 
 <style lang="scss" scoped>
 @import "../assets/sass/styles.scss";
+
+
 .sidebar{
-    display: flex;          // Aqui se 
-    flex-direction: column; // puede hacer    
-    align-items: center;    // un mixin
+    @include displayFlex(column, center);
     justify-content: space-around;
     float: left;
     height: 100vh;
@@ -33,9 +33,7 @@
     background-color: $SidebarColor;
     
     .profile{
-        display: flex; //
-        flex-direction: column;
-        align-items: center;
+        @include displayFlex(column, center);
         img{
             width: 7rem;
             border-radius: 100%;
@@ -45,9 +43,7 @@
         }
     }
     .buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include displayFlex(column, center);
         gap: 2rem;
         button{
             width: 100%;
@@ -57,14 +53,12 @@
             border: 2px solid $SecondaryColor;
             font-size: 24px;
             padding-inline: 2.5rem;
-            padding-bottom: 0.4rem;
+            padding-block: 0.2rem;
             box-shadow: 2px 2px 2px rgb(77, 77, 77);
         }
     }
     .footer{
-        display: flex;  //
-        flex-direction: column;
-        align-items: center;
+        @include displayFlex(column, center);
         img{
             width: 8rem;
         }

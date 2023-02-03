@@ -1,15 +1,18 @@
-
 <script setup>
 import Login from '../components/Login.vue';
+
 </script>
+
+
 <template>
+    
 <main>
     <Login/>
-
 </main>
     
-
 </template>
+
+
 <style lang="scss" scoped>
 
 main{
@@ -20,6 +23,5 @@ main{
     align-content: center;
     background-size: 100%;
 }
-   
 
 </style>
