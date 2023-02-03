@@ -42,11 +42,11 @@
 }
 
 .box{
-    margin-left: 2vw;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     background-color: #edb846d7;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     border: 2px solid white;
     padding-inline: 3%;
     padding-block: 2%;
@@ -54,12 +54,12 @@
     .title{
         display: flex;
         img{
-            width: 5vw;
+            width: 4rem;
             margin-right:2vw ;
         }
         h2{
-            margin-top: 2vh;
-            font-size: 30px;
+            margin-top: 0.7rem;
+            font-size: 2rem;
             text-decoration:underline solid black 2px;
         }
     }
@@ -67,17 +67,17 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 5vh;
+        gap: 1.5rem;
         width: 100%;
-        margin-top: 3vh;
+        margin-top: 0.5rem;
         label{
             width: 100%;
         }
         input{
             width: 100%;
             border: none;
-            border-radius: 1vh;
-            padding: 2vh;
+            border-radius: 0.3rem;
+            padding: 0.7rem;
             box-shadow: 2px 2px 2px rgb(0, 0, 0);
             color: rgb(168, 168, 168);
         }
@@ -86,7 +86,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top: 6vh;
+        margin-top: 2rem;
         h3{
             font-size: 14px;
             align-self: center;
@@ -97,11 +97,11 @@
         button{
             background-color: green;
             color: white;
-            border-radius: 30px;
+            border-radius: 10rem;
             border: 4px solid black;
             font-size: 24px;
-            padding-inline: 3vw;
-            padding-bottom: 1vh;
+            padding-inline: 2.5rem;
+            padding-bottom: 0.4rem;
             box-shadow: 2px 2px 2px rgb(77, 77, 77);
         }
     }
