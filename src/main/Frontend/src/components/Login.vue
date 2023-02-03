@@ -1,33 +1,36 @@
 <script setup>
 
 </script>
+<!-- Importar letra Signica -->
+<!-- Crear variables de colores e implementarlas aqui -->
+
 
 
 <template>
-<div class="mainContainer">
-    <div class="box">
-            <div class="title">
-                <img src="../assets/img/Logo.png" alt="Logo">
-                <h2>Welcome to the jungle</h2>
-            </div>
-            <div class="form">
-                <label>Enter your Username 
-                <br> <input type="text" Username> 
-                </label>
-                <label>Enter your Password 
-                <br> <input type="text" Password> 
-                </label>
-            </div>
-            <div class="foot">
-                <h3>
-                    Did you forget your password?
-                </h3>
-                <button>
-                       Login   
-                </button>
-            </div>
+
+<div class="box">
+        <div class="title">
+            <img src="../assets/img/Logo.png" alt="Logo">
+            <h2>Welcome to the jungle!</h2>
+        </div>
+        <div class="form">
+            <label for="username">Username 
+            <input id="username" type="text" value="Enter your Username" onfocus="this.value=''" required> 
+            </label>
+            <label for="password">Password 
+            <input id="password" type="text" value="Enter your Password" onfocus="this.value=''" required> 
+            </label>
+        </div>
+        <div class="foot">
+            <h3>
+                Did you forget your password?
+            </h3>
+            <button>
+                   Login   
+            </button>
         </div>
 </div>
+
 </template>
 
 
@@ -37,26 +40,26 @@
     padding: 0;
     margin: 0;
 }
-.mainContainer{
-    display: flex;
-    justify-content: center;
-}
+
 .box{
+    margin-left: 2vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    background-color: yellow;
+    background-color: #edb846d7;
     border-radius: 20px;
     border: 2px solid white;
-    padding: 3%;
+    padding-inline: 3%;
+    padding-block: 2%;
+    
     .title{
         display: flex;
         img{
             width: 5vw;
+            margin-right:2vw ;
         }
         h2{
-            font-size: 36px;
+            margin-top: 2vh;
+            font-size: 30px;
             text-decoration:underline solid black 2px;
         }
     }
@@ -64,22 +67,42 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        gap: 5vh;
+        width: 100%;
+        margin-top: 3vh;
+        label{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-radius: 1vh;
+            padding: 2vh;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+            color: rgb(168, 168, 168);
+        }
     }
     .foot{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+        margin-top: 6vh;
         h3{
             font-size: 14px;
             align-self: center;
+            justify-self: flex-end;
+            text-decoration:underline solid  rgb(0, 106, 255) 2px;
+            color: rgb(0, 106, 255);
         }
         button{
             background-color: green;
             color: white;
-            border-radius: 20px;
+            border-radius: 30px;
             border: 4px solid black;
             font-size: 24px;
-            padding-inline: 20px;
+            padding-inline: 3vw;
+            padding-bottom: 1vh;
+            box-shadow: 2px 2px 2px rgb(77, 77, 77);
         }
     }
 }
