@@ -4,11 +4,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-      <nav>
+      <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/list">list</RouterLink>
         <RouterLink to="/dashboard">dashboard</RouterLink>
-      </nav>
+      </nav> -->
   </header>
 
   <RouterView />
