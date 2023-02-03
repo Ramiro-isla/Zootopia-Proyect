@@ -21,7 +21,7 @@
 </template>
 
 <style lang="scss" scoped>
-
+@import "../assets/sass/styles.scss";
 .sidebar{
     display: flex;          // Aqui se 
     flex-direction: column; // puede hacer    
@@ -30,6 +30,7 @@
     float: left;
     height: 100vh;
     padding-inline: 1rem;
+    background-color: $SidebarColor;
     
     .profile{
         display: flex; //
@@ -39,11 +40,15 @@
             width: 7rem;
             border-radius: 100%;
         }
+        h3{
+            color: $QuinaryColor;
+        }
     }
     .buttons{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
         button{
             width: 100%;
             background-color: $QuinaryColor;

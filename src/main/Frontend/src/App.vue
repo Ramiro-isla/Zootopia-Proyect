@@ -19,7 +19,7 @@ import Sidebar from './components/Sidebar.vue';
 
 <style lang="scss" scoped>
 
-@use "../src/scss/default.scss";
+@use "./assets/sass/styles.scss";
 
 </style>
 

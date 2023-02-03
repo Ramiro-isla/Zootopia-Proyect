@@ -1,10 +1,6 @@
 <script setup>
 
 </script>
-<!-- Importar letra Signica -->
-<!-- Crear variables de colores e implementarlas aqui -->
-
-
 
 <template>
 
@@ -35,7 +31,7 @@
 
 
 <style lang="scss" scoped>
-@import "../assets/sass/variables";
+@import "../assets/sass/styles.scss";
 
 *{
     padding: 0;
