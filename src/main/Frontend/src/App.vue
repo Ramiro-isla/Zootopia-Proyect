@@ -13,9 +13,6 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style lang="scss" scoped>
-
-@use "../src/scss/default.scss";
+<style scoped>
 
 </style>
-
