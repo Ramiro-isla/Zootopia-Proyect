@@ -35,10 +35,12 @@
 
 
 <style lang="scss" scoped>
+@import "../assets/sass/variables";
 
 *{
     padding: 0;
     margin: 0;
+    font-family: $font-family;
 }
 
 .box{
