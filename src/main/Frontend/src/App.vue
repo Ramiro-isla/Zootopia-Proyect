@@ -17,6 +17,9 @@ import Sidebar from './components/Sidebar.vue';
   <RouterView />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@use "../src/scss/default.scss";
 
 </style>
+
