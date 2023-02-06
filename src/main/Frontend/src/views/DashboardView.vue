@@ -1,5 +1,8 @@
-<script setup></script>
+<script setup>
+import { RouterLink, RouterView } from 'vue-router';
+import TableComponent from '../components/TableComponent.vue';
+</script>
 <template>
-    <h1>dashboard</h1>
+     <TableComponent/>
 </template>
 <style lang="scss" scoped></style>

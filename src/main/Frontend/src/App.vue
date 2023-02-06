@@ -1,17 +1,17 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import TableComponent from './components/TableComponent.vue';
 </script>
 
 <template>
   <header>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/list">list</RouterLink>
-        <RouterLink to="/dashboard">dashboard</RouterLink>
+        <!-- <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/dashboard">dashboard</RouterLink> -->
       </nav>
   </header>
-
-  <RouterView />
+<TableComponent/>
+  
 </template>
 
 <style scoped>
