@@ -3,40 +3,33 @@
 <template>
   <div class="table-responsive" id="Table">
     <div id="Caption-Align">
-    <h2>Animals List</h2>
-        <button id="buttonAdd">Add New Animal</button>
-    
-   
+      <h2>Animals List</h2>
+      <button id="buttonAdd">Add New Animal</button>
 
-    <div id="Filter-By-Align">
+      <div id="Filter-By-Align">
         <label class="dropdown">
+          <div class="dd-button">Filter By</div>
 
-            <div class="dd-button">
-                Filter By
-            </div>
-          
-            <input type="checkbox" class="dd-input" id="test">
-          
-            <ul class="dd-menu">
-              <li>Family</li>
-              <li>Origin Country</li>
-              
-            </ul>
-            
+          <input type="checkbox" class="dd-input" id="test" />
+
+          <ul class="dd-menu">
+            <li>Family</li>
+            <li>Origin Country</li>
+          </ul>
         </label>
+      </div>
     </div>
-        </div>
-    </div>
-    <table class="table">
-      <tr>
-        <th>ISBN</th>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Gender</th>
-        <th>Family</th>
-        <th>Date of Ingress</th>
-      </tr>
-    </table>
+  </div>
+  <table class="table">
+    <tr>
+      <th>ISBN</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Gender</th>
+      <th>Family</th>
+      <th>Date of Ingress</th>
+    </tr>
+  </table>
 </template>
 
 <style lang="scss" scoped>
@@ -139,12 +132,20 @@ a:hover {
   border-bottom: 1px solid #cccccc;
 }
 
-#Table{
-    display: flex;
-    justify-content: center;
+#Table {
+  display: flex;
+  justify-content:center;
+  overflow: visible;
+  
 }
 
 #Caption-Align {
-   width: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
-</style> 
+
+#Filter-By-Align {
+  
+}
+</style>
