@@ -14,6 +14,9 @@ import TableComponent from './components/TableComponent.vue';
   
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@use "../src/scss/default.scss";
 
 </style>
+
