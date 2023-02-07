@@ -1,10 +1,6 @@
 <script setup>
 
 </script>
-<!-- Importar letra Signica -->
-<!-- Crear variables de colores e implementarlas aqui -->
-
-
 
 <template>
 
@@ -35,11 +31,7 @@
 
 
 <style lang="scss" scoped>
-
-*{
-    padding: 0;
-    margin: 0;
-}
+@import "../assets/sass/styles.scss";
 
 .box{
     margin-left: 2rem;
@@ -101,7 +93,7 @@
             border: 4px solid black;
             font-size: 24px;
             padding-inline: 2.5rem;
-            padding-bottom: 0.4rem;
+            padding-block: 0.2rem;
             box-shadow: 2px 2px 2px rgb(77, 77, 77);
         }
     }

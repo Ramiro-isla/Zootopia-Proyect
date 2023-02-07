@@ -1,14 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
   <header>
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/list">list</RouterLink>
-        <RouterLink to="/dashboard">dashboard</RouterLink>
-      </nav> -->
+      <nav>
+        <RouterLink to="/">Login</RouterLink> <br>
+        <RouterLink to="/dashboard">dashboard</RouterLink> <br>
+      </nav>
   </header>
 
   <RouterView />
@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style lang="scss" scoped>
 
-@use "../src/scss/default.scss";
+@use "./assets/sass/styles.scss";
 
 </style>
 
