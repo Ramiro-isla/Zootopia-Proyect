@@ -10,8 +10,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/dashboard">dashboard</RouterLink> <br>
       </nav>
   </header>
-
-  <RouterView />
+<TableComponent/>
+  <RouterView/>
 </template>
 
 <style lang="scss" scoped>

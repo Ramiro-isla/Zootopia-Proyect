@@ -1,9 +1,11 @@
 <script setup>
-import Graph from '../components/Graph.vue';
-import Sidebar from '../components/Sidebar.vue';
+import { RouterLink, RouterView } from 'vue-router';
+import TableComponent from '../components/TableComponent.vue';
 </script>
 <template>
-    <Sidebar/>
-    <Graph/>
+     <TableComponent/>
+     
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
