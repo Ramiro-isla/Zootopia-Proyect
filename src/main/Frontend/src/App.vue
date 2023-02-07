@@ -11,7 +11,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/dashboard">dashboard</RouterLink> <br>
       </nav>
   </header>
-  <TableDetails/>
+<TableComponent/>
+  <RouterView/>
 </template>
 
 <style lang="scss" scoped>
