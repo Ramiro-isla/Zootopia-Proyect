@@ -15,14 +15,16 @@ import jakarta.persistence.Table;
 public class Animals {
     
 @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-private long id;
+private Long id;
+@Column (nullable = false, length = 50) 
+ private String name;
 
 
 
 
-private String name;
 
-public Animals(String name, String type, String family, String gender, Date ingressDate) {
+
+public Animals(String name, String type, String family, String gender, int ingressDate) { //Necesitamos constructor bro?
     this.name = name;
     this.type = type;
     this.family = family;
@@ -32,7 +34,7 @@ public Animals(String name, String type, String family, String gender, Date ingr
 private String type;
 private String family;
 private String gender;
-private Date ingressDate;
+private int ingressDate;
 
 
 public String getName() {
@@ -59,10 +61,10 @@ public String getGender() {
 public void setGender(String gender) {
     this.gender = gender;
 }
-public Date getIngressDate() {
+public int getIngressDate() {
     return ingressDate;
 }
-public void setIngressDate(Date ingressDate) {
+public void setIngressDate(int ingressDate) {
     this.ingressDate = ingressDate;
 }
 
