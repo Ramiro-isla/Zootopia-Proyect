@@ -1,22 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import TableComponent from './components/TableComponent.vue';
+
 </script>
 
 <template>
   <header>
       <nav>
-        <!-- <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/dashboard">dashboard</RouterLink> -->
+        <RouterLink to="/">Login</RouterLink> <br>
+        <RouterLink to="/dashboard">dashboard</RouterLink> <br>
       </nav>
   </header>
 <TableComponent/>
-  
+  <RouterView/>
 </template>
 
 <style lang="scss" scoped>
 
-@use "../src/scss/default.scss";
+@use "./assets/sass/styles.scss";
 
 </style>
 

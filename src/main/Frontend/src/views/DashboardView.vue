@@ -4,5 +4,8 @@ import TableComponent from '../components/TableComponent.vue';
 </script>
 <template>
      <TableComponent/>
+     
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
