@@ -1,4 +1,5 @@
 <script setup>
+import TableDetails from './components/TableDetails.vue';
 import { RouterLink, RouterView } from 'vue-router'
 
 </script>
@@ -10,8 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/dashboard">dashboard</RouterLink> <br>
       </nav>
   </header>
-
-  <RouterView />
+  <TableDetails/>
 </template>
 
 <style lang="scss" scoped>
@@ -19,4 +19,3 @@ import { RouterLink, RouterView } from 'vue-router'
 @use "./assets/sass/styles.scss";
 
 </style>
-
