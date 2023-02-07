@@ -1,0 +1,1 @@
+INSERT INTO Animals (id, name) VALUES (default, "Rex")
