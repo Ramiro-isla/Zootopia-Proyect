@@ -26,20 +26,20 @@ private Long id;
 
 
 
-public Animals(Long id, String name, String type){ //String family, String gender, int ingressDate) { //Necesitamos constructor bro?
+public Animals(Long id, String name, String type, String family, String gender, int ingressDate){
     this.name = name;
     this.type = type;
+
+    this.family = family;
+    this.gender = gender;
+    this.ingressDate = ingressDate;
 }
-//     this.family = family;
-//     this.gender = gender;
-//     this.ingressDate = ingressDate;
-// }
 public Animals() {
 }
 private String type;
-// private String family;
-// private String gender;
-// private int ingressDate;
+private String family;
+private String gender;
+private int ingressDate;
 
 
 public String getName() {
@@ -53,25 +53,24 @@ public String getType() {
 }
 public void setType(String type) {
     this.type = type;
-// }
-// public String getFamily() {
-//     return family;
-// }
-// public void setFamily(String family) {
-//     this.family = family;
-// }
-// public String getGender() {
-//     return gender;
-// }
-// public void setGender(String gender) {
-//     this.gender = gender;
-// }
-// public int getIngressDate() {
-//     return ingressDate;
-// }
-// public void setIngressDate(int ingressDate) {
-//     this.ingressDate = ingressDate;
-// }
-
 }
+public String getFamily() {
+    return family;
+}
+public void setFamily(String family) {
+    this.family = family;
+}
+public String getGender() {
+    return gender;
+}
+public void setGender(String gender) {
+    this.gender = gender;
+}
+public int getIngressDate() {
+    return ingressDate;
+}
+public void setIngressDate(int ingressDate) {
+    this.ingressDate = ingressDate;
+}
+
 }
