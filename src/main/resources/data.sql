@@ -1,1 +1,2 @@
-INSERT INTO Animals (id, name) VALUES (default, "Rex")
+
+INSERT INTO animals(id, name, type) VALUES (default , 'Lion', 'Feline')

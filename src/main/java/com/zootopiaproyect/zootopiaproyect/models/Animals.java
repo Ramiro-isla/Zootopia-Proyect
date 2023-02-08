@@ -1,6 +1,6 @@
 package com.zootopiaproyect.zootopiaproyect.models;
 
-import java.sql.Date;
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,11 +10,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Animals")
+@Table(name = "animals")
 
 public class Animals {
     
-@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+@Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "id_animals")
+
 private Long id;
 @Column (nullable = false, length = 50) 
  private String name;
@@ -24,12 +25,16 @@ private Long id;
 
 
 
-public Animals(String name, String type, String family, String gender, int ingressDate) { //Necesitamos constructor bro?
+
+public Animals(Long id, String name, String type, String family, String gender, int ingressDate){
     this.name = name;
     this.type = type;
+
     this.family = family;
     this.gender = gender;
     this.ingressDate = ingressDate;
+}
+public Animals() {
 }
 private String type;
 private String family;
