@@ -4,7 +4,7 @@
   <div class="table-responsive" id="Table">
     <div id="Caption-Align">
       <h2>Animals List</h2>
-      <button id="buttonAdd">Add New Animal</button>
+      <button id="buttonAdd">ADD NEW ANIMAL</button>
 
       <div id="Filter-By-Align">
         <label class="dropdown">
@@ -20,87 +20,117 @@
       </div>
     </div>
   </div>
-  <table class="table">
-    <tr>
-      <th>ISBN</th>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Gender</th>
-      <th>Family</th>
-      <th>Date of Ingress</th>
-    </tr>
-  </table>
+  <div class="info-container">
+    <div class="info-table">
+      <table class="table" id="table-top">
+        <tr class="tr-list">
+          <th>Name</th>
+          <th>Type</th>
+          <th>Gender</th>
+          <th>Family</th>
+          <th>Date of Ingress</th>
+        </tr>
+      </table>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-th {
-  color: red;
+@import "../assets/sass/variables";
+
+#Table {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  margin: 15px 0 20px 0;
+}
+.table-responsive {
+  #Caption-Align {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 30px;
+    }
+    #buttonAdd {
+      border-radius: 8px;
+      background-color: $QuinaryColor;
+      border: 3px solid;
+      height: 4rem;
+      width: 14rem;
+    }
+    #Filter-By-Align {
+      .dropdown {
+        display: inline-block;
+        position: relative;
+        .dd-button {
+          display: inline-block;
+          border: 1px solid gray;
+          border-radius: 4px;
+          padding: 10px 30px 10px 20px;
+          background-color: #44ff57;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+        .dd-button:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid black;
+        }
+        .dd-button:hover {
+          background-color: #eeeeee;
+        }
+        .dd-input {
+          display: none;
+        }
+        #test {
+        }
+        .dd-menu {
+          position: absolute;
+          top: 100%;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 0;
+          margin: 2px 0 0 0;
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+          background-color: #ffffff;
+          list-style-type: none;
+          li {
+            padding: 10px 20px;
+            cursor: pointer;
+            white-space: nowrap;
+          }
+          li:hover {
+            background-color: #f6f6f6;
+          }
+        }
+      }
+    }
+  }
 }
 
-body {
-  color: #000000;
-  font-family: Sans-Serif;
-  padding: 30px;
-  background-color: #f6f6f6;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  color: #222222;
-}
-
-/* Dropdown */
-
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-.dd-button {
-  display: inline-block;
-  border: 1px solid gray;
-  border-radius: 4px;
-  padding: 10px 30px 10px 20px;
-  background-color: #44ff57;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.dd-button:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
-}
-
-.dd-button:hover {
-  background-color: #eeeeee;
-}
-
-.dd-input {
-  display: none;
-}
-
-.dd-menu {
-  position: absolute;
-  top: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 2px 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  list-style-type: none;
+.info-container {
+  display: flex;
+  justify-content: center;
+  .info-table {
+    width: 90%;
+    .table {
+      .tr-list {
+        width: 90%;
+        th {
+          color: $thColor;
+        }
+      }
+    }
+  }
 }
 
 .dd-input + .dd-menu {
@@ -109,43 +139,5 @@ a:hover {
 
 .dd-input:checked + .dd-menu {
   display: block;
-}
-
-.dd-menu li {
-  padding: 10px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.dd-menu li:hover {
-  background-color: #f6f6f6;
-}
-
-.dd-menu li a {
-  display: block;
-  margin: -10px -20px;
-  padding: 10px 20px;
-}
-
-.dd-menu li.divider {
-  padding: 0;
-  border-bottom: 1px solid #cccccc;
-}
-
-#Table {
-  display: flex;
-  justify-content:center;
-  overflow: visible;
-  
-}
-
-#Caption-Align {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#Filter-By-Align {
-  
 }
 </style>

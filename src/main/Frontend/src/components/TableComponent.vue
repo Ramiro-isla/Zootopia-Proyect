@@ -10,12 +10,17 @@
         <td>Family</td>
         <td>Date</td>
         <td>
-          <button>
-            <img src="../assets/img/pencil.png" alt="edit item button" />
-          </button>
-          <button>
-            <img src="../assets/img/Vectortrash.png" alt="delete item button" />
-          </button>
+          <div class="button-container">
+            <button>
+              <img src="../assets/img/pencil.png" alt="edit item button" />
+            </button>
+            <button>
+              <img
+                src="../assets/img/Vectortrash.png"
+                alt="delete item button"
+              />
+            </button>
+          </div>
         </td>
       </tr>
     </table>
@@ -34,13 +39,20 @@
     tr {
       width: 90%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       border: 1px solid $TableColor;
       border-radius: 8px;
-
-      button {
-        border: none;
+      td {
+        width: 20%;
+      }
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          border: none;
+          margin: 10px;
+        }
       }
     }
   }
