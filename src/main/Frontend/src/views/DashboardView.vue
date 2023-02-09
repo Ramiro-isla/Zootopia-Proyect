@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar.vue";
 import TableComponent from "../components/TableComponent.vue";
 import TableDetails from "../components/TableDetails.vue";
 import { useAnimalsStore } from "../stores/animalStore";
-
+import { onBeforeMount } from "vue";      
 const store = useAnimalsStore();
 onBeforeMount(async() => {
   await store.fetchAnimals();
