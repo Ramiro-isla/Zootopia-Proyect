@@ -1,0 +1,8 @@
+@mixin displayFlex($Direction, $Align-items){
+    display: flex;
+    flex-direction: $Direction;
+    align-items: $Align-items;
+}
+
+
+
