@@ -1,21 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-  </header>
-
   <RouterView />
 </template>
 
 <style lang="scss" scoped>
-
-@use "../src/scss/default.scss";
-
+@use "./assets/sass/styles.scss";
 </style>
-
