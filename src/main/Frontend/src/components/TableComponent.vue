@@ -1,14 +1,37 @@
-<script setup></script>
+<script setup>
+defineProps({
+  
+  name: {
+    type: String,
+    default: null,
+  },
+  type: {
+    type: String,
+    default: null,
+  },
+  family: {
+    type: String,
+    default: null,
+  },
+  gender: {
+    type: String,
+    default: null,
+  },
+  ingressDate: {
+    type: String,
+    default: null,
+  },
+});</script>
 
 <template>
   <div class="table-responsive" id="table-responsive">
     <table class="table" id="table">
       <tr>
-        <td>Name</td>
-        <td>Type</td>
-        <td>Gender</td>
-        <td>Family</td>
-        <td>Date</td>
+        <td>{{name}}</td>
+        <td>{{type}}</td>
+        <td>{{gender}}</td>
+        <td>{{family}}</td>
+        <td>{{ingressDate}}</td>
         <td>
           <div class="button-container">
             <button>
