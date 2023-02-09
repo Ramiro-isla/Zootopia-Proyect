@@ -7,7 +7,10 @@ import { useAnimalsStore } from "../stores/animalStore";
 import { onBeforeMount } from "vue";      
 const store = useAnimalsStore();
 onBeforeMount(async() => {
+  console.log("accede a onbeforemount");
   await store.fetchAnimals();
+  console.log("acaba el fetch");
+
 });
 </script>
 <template>
