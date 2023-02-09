@@ -69,7 +69,7 @@
           border: 1px solid gray;
           border-radius: 4px;
           padding: 10px 30px 10px 20px;
-          background-color: #44ff57;
+          background-color: #f8b109;
           cursor: pointer;
           white-space: nowrap;
         }

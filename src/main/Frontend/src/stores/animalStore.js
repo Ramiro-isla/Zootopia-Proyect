@@ -1,15 +1,14 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useAnimalsStore = defineStore('animals', () => {
-  const animals = ref([])
-
-  async function fetchAnimals(){
-    await fetch("localhost:8080/api/animals") 
-    .then((res) => res.json())
-    .then((json) => {
-      this.animals = json;
-    } )
-  }
-  return { animals, fetchAnimals }
-})
+export const useAnimalsStore = defineStore("animals", {
+  state: () => ({
+    animals: [],
+  }),
+  actions: {
+    async fetchAnimals() {
+      const response = await fetch("http://localhost:8080/api/animals");
+      const responseJson = await response.json();
+      this.animals = responseJson;
+    },
+  },
+});
