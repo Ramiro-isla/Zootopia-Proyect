@@ -33,7 +33,7 @@ import { RouterLink } from "vue-router";
     <div class="foot">
       <h3>Did you forget your password?</h3>
       <button>
-        <router-link to="/dashboard" class="login">Login</router-link>
+        <RouterLink to="/dashboard" class="login">Login</RouterLink>
       </button>
     </div>
   </div>
