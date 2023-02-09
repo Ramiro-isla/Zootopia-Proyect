@@ -7,9 +7,11 @@ export  const useAnimalsStore = defineStore('animals', {
   }),
   actions:{
     async fetchAnimals(){
-      const response =await fetch("localhost:8080/api/animals") 
+      const response =await fetch("http://localhost:8080/api/animals") 
       const responseJson = await response.json()
-      return characters.push(responseJson)
+      console.log(responseJson);
+      this.characters=responseJson
+      return this.characters
     }
   }
 
