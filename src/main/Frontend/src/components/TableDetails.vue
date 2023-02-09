@@ -8,8 +8,9 @@ function alertButton(){
   <div class="table-responsive" id="Table">
     <div id="Caption-Align">
       <h2>Animals List</h2>
+      <div class="addAnimals">
       <button id="buttonAdd" @click="alertButton()">ADD NEW ANIMAL</button>
-
+</div>
       <div id="Filter-By-Align">
         <label class="dropdown">
           <div class="dd-button">Filter By</div>
@@ -57,12 +58,15 @@ function alertButton(){
     h2 {
       font-size: 30px;
     }
-    #buttonAdd {
-      border-radius: 8px;
-      background-color: $QuinaryColor;
-      border: 3px solid;
-      height: 4rem;
-      width: 14rem;
+    .addAnimals {
+      width: 70%;
+      #buttonAdd {
+        border-radius: 8px;
+        background-color: $QuinaryColor;
+        border: 3px solid;
+        height: 4rem;
+        width: 14rem;
+      }
     }
     #Filter-By-Align {
       .dropdown {
