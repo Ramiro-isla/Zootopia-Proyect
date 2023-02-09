@@ -22,14 +22,14 @@ public class Animals {
     private String type;
     private String family;
     private String gender;
-    private String ingressDate;
+    // private String ingressDate;
 
-    public Animals(Long id, String name, String type, String family, String gender, String ingressDate) {
+    public Animals(Long id, String name, String type, String family, String gender /*String ingressDate*/) {
         this.name = name;
         this.type = type;
         this.family = family;
         this.gender = gender;
-        this.ingressDate = ingressDate;
+        // this.ingressDate = ingressDate;
     }
 
     public Animals() {
@@ -67,12 +67,12 @@ public class Animals {
         this.gender = gender;
     }
 
-    public String getIngressDate() {
-        return ingressDate;
-    }
+    // public String getingressDate() {
+    //     return ingressDate;
+    // }
 
-    public void setIngressDate(String ingressDate) {
-        this.ingressDate = ingressDate;
-    }
+    // public void setingressDate(String ingressDate) {
+    //     this.ingressDate = ingressDate;
+    // }
 
 }
