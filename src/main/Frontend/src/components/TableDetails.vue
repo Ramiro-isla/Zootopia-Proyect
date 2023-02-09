@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup>
+function alertButton(){
+  alert("Funciona")
+}
+</script>
 
 <template>
   <div class="table-responsive" id="Table">
     <div id="Caption-Align">
       <h2>Animals List</h2>
-      <button id="buttonAdd">ADD NEW ANIMAL</button>
+      <button id="buttonAdd" @click="alertButton()">ADD NEW ANIMAL</button>
 
       <div id="Filter-By-Align">
         <label class="dropdown">
@@ -90,8 +94,6 @@
         }
         .dd-input {
           display: none;
-        }
-        #test {
         }
         .dd-menu {
           position: absolute;

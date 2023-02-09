@@ -28,7 +28,6 @@
     @include displayFlex(column, center);
     justify-content: space-around;
     float: left;
-    height: 100vh;
     padding-inline: 1rem;
     background-color: $SidebarColor;
     
