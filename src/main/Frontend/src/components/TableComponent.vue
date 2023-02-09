@@ -1,4 +1,5 @@
 <script setup>
+
 defineProps({
   
   name: {
@@ -37,7 +38,7 @@ defineProps({
             <button>
               <img src="../assets/img/pencil.png" alt="edit item button" />
             </button>
-            <button>
+            <button @click="deleteAnimal">
               <img
                 src="../assets/img/Vectortrash.png"
                 alt="delete item button"
