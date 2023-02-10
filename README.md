@@ -1,4 +1,11 @@
+
+
+ ![Captura de pantalla (143)](https://user-images.githubusercontent.com/116894398/218050720-7a917d84-7752-4540-b6a9-e6fb587254d7.png)
+ 
+ ![Captura de pantalla (144)](https://user-images.githubusercontent.com/116894398/218051086-1370df6d-79bf-42a2-a306-947afbffeafe.png)
+ 
 # Zootopia-Proyect
+ 
 Si un usuario intenta loggearse y no utiliza la palabra clave correcta para acceder al sistema este deberá tener un feedback del sistema
 Una vez loggeado el administrador visualizará el dashboard en el cual se debe reflejar la cantidad total de especies que hay actualmente en la reserva
 El sistema deberá permitir añadir un nuevo ejemplar
@@ -36,6 +43,7 @@ Para el registro de cada ejemplar se deberá introducir los siguientes datos:
 
 
 
+![Captura de pantalla (145)figma](https://user-images.githubusercontent.com/116894398/218052280-a633cba7-3ba9-4a62-9a39-a97c4ada05be.png)
 
 ### HERRAMIENTAS Y LENGUAJES UTILIZADOS
 #### Lenguajes
